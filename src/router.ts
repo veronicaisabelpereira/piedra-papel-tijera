@@ -1,9 +1,11 @@
+//Importa las paginas
+
 import { initGame } from "./pages/game";
 import { initResults } from "./pages/results";
 import { initRules } from "./pages/rules";
 import { initWelcome } from "./pages/welcome";
 
-const BASE_PATH = "/Mod5-Desafio-Rock-Papper-Scissors";
+const BASE_PATH = "/Mod5-Desafio-Rock-Papper-Scissors"; //?
 
 function isGithubPages() {
   return location.host.includes("fypoo1day.github.io");
