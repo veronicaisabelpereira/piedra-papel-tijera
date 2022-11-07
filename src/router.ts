@@ -5,7 +5,7 @@ import { initResults } from "./pages/results";
 import { initRules } from "./pages/rules";
 import { initWelcome } from "./pages/welcome";
 
-const BASE_PATH = "/Mod5-Desafio-Rock-Papper-Scissors"; //?
+const BASE_PATH = "/piedra-papel-tijera"; //?
 
 function isGithubPages() {
   return location.host.includes("fypoo1day.github.io");
@@ -58,7 +58,7 @@ export function initRouter(container: Element) {
 
   if (
     location.pathname == "/" ||
-    location.pathname == "/Mod5-Desafio-Rock-Papper-Scissors/"
+    location.pathname == "/piedra-papel-tijera/"
   ) {
     goTo("/welcome");
   } else {

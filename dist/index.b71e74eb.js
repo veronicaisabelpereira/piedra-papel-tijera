@@ -532,12 +532,13 @@ function hmrAcceptRun(bundle, id) {
 }
 
 },{}],"h7u1C":[function(require,module,exports) {
+//importa el router y los componentes que montara en la pagina
 var _router = require("./router");
 var _button = require("./components/button");
 var _paper = require("./components/paper");
 var _tijera = require("./components/tijera");
 var _piedra = require("./components/piedra");
-console.log("test");
+//funcion que se encarga de seleccionar el div root del DOM donde se montaran los componentes
 (function() {
     const root = document.querySelector(".root");
     (0, _router.initRouter)(root);
@@ -547,11 +548,12 @@ console.log("test");
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "initRouter", ()=>initRouter);
+//Importa las paginas
 var _game = require("./pages/game");
 var _results = require("./pages/results");
 var _rules = require("./pages/rules");
 var _welcome = require("./pages/welcome");
-const BASE_PATH = "/Mod5-Desafio-Rock-Papper-Scissors";
+const BASE_PATH = "/piedra-papel-tijera"; //?
 function isGithubPages() {
     return location.host.includes("fypoo1day.github.io");
 }
@@ -592,7 +594,7 @@ function initRouter(container) {
             container.appendChild(el);
         }
     }
-    if (location.pathname == "/" || location.pathname == "/Mod5-Desafio-Rock-Papper-Scissors/") goTo("/welcome");
+    if (location.pathname == "/" || location.pathname == "/piedra-papel-tijera/") goTo("/welcome");
     else handleRoute(location.pathname);
     window.onpopstate = function() {
         handleRoute(location.pathname);
