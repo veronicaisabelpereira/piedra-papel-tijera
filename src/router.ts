@@ -58,7 +58,7 @@ export function initRouter(container: Element) {
 
   if (
     location.pathname == "/" ||
-    location.pathname == "/piedra-papel-tijera/"
+    location.host.includes("github.io")
   ) {
     goTo("/welcome");
   } else {
